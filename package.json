@@ -1,0 +1,29 @@
+{
+  "name": "pyocd",
+  "main": "./lib/pyocd",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "pyocd:toggle"
+  },
+  "repository": "https://github.com/atom/pyocd",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.0.1"
+  },
+  "package-deps": [
+      "busy"
+  ],
+  "consumedServices": {
+    "busy": {
+      "versions": {
+        "^1.0.0": "consumeBusy"
+      }
+    }
+  }
+}

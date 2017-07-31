@@ -1,0 +1,38 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle pyocd",
+        "command": "pyocd:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "pyocd",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "pyocd:toggle"
+            },
+            {
+              "label": "Flash",
+              "command": "pyocd:flash"
+            },
+            {
+              "label": "Erase",
+              "command": "pyocd:erase"
+            },
+            {
+              "label": "Reset",
+              "command": "pyocd:reset"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
