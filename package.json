@@ -2,7 +2,7 @@
   "name": "pyocd",
   "main": "./lib/pyocd",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Flash your mbed device from Atom with pyOCD",
   "keywords": [
   ],
   "activationCommands": {

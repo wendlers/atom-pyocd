@@ -25,10 +25,6 @@
             {
               "label": "Erase",
               "command": "pyocd:erase"
-            },
-            {
-              "label": "Reset",
-              "command": "pyocd:reset"
             }
           ]
         }
