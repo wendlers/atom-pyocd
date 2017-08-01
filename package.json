@@ -6,7 +6,11 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "pyocd:toggle"
+    "atom-workspace": [
+      "pyocd:toggle",
+      "pyocd:flash",
+      "pyocd:erase"
+    ]
   },
   "repository": "https://github.com/atom/pyocd",
   "license": "MIT",

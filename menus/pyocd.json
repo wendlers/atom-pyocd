@@ -2,8 +2,16 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle pyocd",
+        "label": "pyocd: toggle",
         "command": "pyocd:toggle"
+      },
+      {
+        "label": "pyocd: flash",
+        "command": "pyocd:flash"
+      },
+      {
+        "label": "pyocd: erase",
+        "command": "pyocd:erase"
       }
     ]
   },
