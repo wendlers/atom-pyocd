@@ -1,7 +1,7 @@
 {
   "name": "pyocd",
   "main": "./lib/pyocd",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Flash your mbed / DAP-link device from Atom with pyOCD",
   "keywords": [
     "pyocd",
@@ -26,7 +26,7 @@
     "atom-package-deps": "^4.0.1"
   },
   "package-deps": [
-      "busy"
+    "busy"
   ],
   "consumedServices": {
     "busy": {
