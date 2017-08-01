@@ -17,7 +17,7 @@
       "pyocd:erase"
     ]
   },
-  "repository": "https://github.com/atom/pyocd",
+  "repository": "https://github.com/wendlers/atom-pyocd",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
