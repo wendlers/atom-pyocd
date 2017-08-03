@@ -8,6 +8,8 @@ This package allows you to flash your [mbed](https://www.mbed.com/) / [DAP-link]
 * Flash `.hex` or `.bin` file
 * Erase flash
 
+![screenshot](https://raw.githubusercontent.com/wendlers/atom-pyocd/master/doc/pyocd.png)
+
 ## Prerequisites
 
 In order to use this package, pyOCD needs to be installed on your machine. For details on how to install pyOCD see the  [instructions](https://github.com/mbedmicro/pyOCD). On a typical Linux system the following command should to the trick:
