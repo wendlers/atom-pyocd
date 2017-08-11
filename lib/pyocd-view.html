@@ -41,9 +41,9 @@
           <div class='panel-body padded'>
               <div style='overflow-x: auto;'>
                   <div class='block'>
-                      <label class='input-label'>
-                          Target
-                          <select name='board' id='pyocd-target'>
+                      <div class='form-group'>
+                          <label>Target</label>
+                          <select class='form-control monitor-option' id='pyocd-target'>
                             <option value='autodetect'>-autodetect-</option>
                             <option value='kl25z'>kl25z</option>
                             <option value='kl26z'>kl26z</option>
@@ -83,11 +83,14 @@
                             <option value='kl43z4'>kl43z4</option>
                             <option value='kw01z4'>kw01z4</option>
                           </select>
-                      </label>
+                      </div>
                   </div>
                   <div class='block'>
-                      <div>board id (optional)</div>
-                      <input class='input-text native-key-bindings' type='text' placeholder='none' id='pyocd-boardid'>
+                    <div class='form-group'>
+                      <label>Board ID</label>
+                      <select class='form-control monitor-option' id='pyocd-boardid'>
+                      </select>
+                    </div>
                   </div>
                   <div class='block'>
                       <div>file (.bin or .hex)</div>
@@ -108,7 +111,6 @@
 
     <p>
       <div class='block' style='text-align:center;'>
-          <button class='btn icon icon-three-bars inline-block-tight' id='pyocd-list'>list</button>
           <button class='btn icon icon-zap inline-block-tight' id='pyocd-flash'>flash</button>
           <button class='btn icon icon-flame inline-block-tight' id='pyocd-flasherase'>erase</button>
           <button class='btn icon icon-x inline-block-tight' id='pyocd-close'>close</button>
