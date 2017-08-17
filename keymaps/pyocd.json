@@ -3,5 +3,8 @@
     "shift-alt-p": "pyocd:toggle",
     "shift-alt-s": "pyocd:flash",
     "shift-alt-e": "pyocd:erase"
+  },
+  ".pyocd": {
+    "escape": "pyocd:toggle"
   }
 }
