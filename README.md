@@ -1,10 +1,9 @@
 # atom-pyocd - pyOCD integration for Atom
 
-This package allows you to flash your [mbed](https://www.mbed.com/) / [DAP-link](https://developer.mbed.org/handbook/DAPLink) device from within Atom using [pyOCD](https://github.com/mbedmicro/pyOCD). It is meant as an extension to the [build-med](https://atom.io/packages/build-mbed) to allow flashin the results from the `mbed-cli` build process.
+This package allows you to flash your [mbed](https://www.mbed.com/) / [DAP-link](https://developer.mbed.org/handbook/DAPLink) device from within Atom using [pyOCD](https://github.com/mbedmicro/pyOCD). It is meant as an extension to the [build-med](https://atom.io/packages/build-mbed) to allow flashing the results from the `mbed-cli` build process.
 ## Features
 
 * Configuration dialog to configure target file, board ID etc. on per project basis (configuration is written to `pyocd_settings.json`).
-* List available boards
 * Flash `.hex` or `.bin` file
 * Erase flash
 
@@ -59,7 +58,7 @@ Now, when you start your atom next time, you might be asked to install the some 
 * Configure pyOCD for your project by opening the pyOCD panel with `shift+alt+p` (or from right click menu and selecting `pyocd: toggle`).
 * In the configuration panel at least specify a `target` and a `file`.
 * Now hit `flash` or press `shift-alt-s` to flash your board.
-* Flashing progress is indicated by the spinning busy indicator in the right buttom corner.
+* Flashing progress is indicated by the spinning busy indicator in the right bottom corner.
 * Depending on your board, you might need to manually reset it after flashing to make your program run.
 
 ## Configuration Parameters
@@ -67,7 +66,8 @@ Now, when you start your atom next time, you might be asked to install the some 
 The following could be set in the pyOCD panel:
 
 * The `target` MCU
-* The `board ID` which is only needed if you have more than one board connected. You could request a list of connected board IDs by hitting the `list` button in the pyOCD panel.
+* The `board ID` which is only needed if you have more than one board connected.
+* The `file` to flash. Could be a .bin or .hex file.
 * If the `chip erase` switch is turned on, a full chip-erase will be performed when flashing, else only a sector erase will be done (switches `-ce` and `-se` of `pyocd-flashtool`).
 * If the `fast program` switch is enabled, only the CRC of each page to is used to determine if it already has the same data (`-fp` switch of `pyocd-flashtool`).
 
@@ -80,6 +80,5 @@ In the package settings the following could be configured:
 The following functions could be performed (from the pyOCD panel,the menu, the context-menu or by keyboard shortcut):
 
 * _toggel_ pyOCD panel (``shift+alt+p``): open the pyOCD panel
-* _list_: list connected boards
 * _flash_ (`shift-alt-s`): flash specified file
 * _erase_ (`shift-alt-e`): erase chip
