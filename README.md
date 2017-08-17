@@ -1,6 +1,7 @@
 # atom-pyocd - pyOCD integration for Atom
 
 This package allows you to flash your [mbed](https://www.mbed.com/) / [DAP-link](https://developer.mbed.org/handbook/DAPLink) device from within Atom using [pyOCD](https://github.com/mbedmicro/pyOCD). It is meant as an extension to the [build-med](https://atom.io/packages/build-mbed) to allow flashing the results from the `mbed-cli` build process.
+
 ## Features
 
 * Configuration dialog to configure target file, board ID etc. on per project basis (configuration is written to `pyocd_settings.json`).
