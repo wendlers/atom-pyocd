@@ -2,3 +2,4 @@
 npm-debug.log
 node_modules
 pyocd_settings.json
+stlink_settings.json
